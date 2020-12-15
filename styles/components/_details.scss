@@ -1,0 +1,14 @@
+.details__bookInfo {
+  height: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 95%;
+    width: auto;
+    height: auto;
+  }
+  span {
+      margin: .3rem 0;
+  }
+}

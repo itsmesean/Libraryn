@@ -1,5 +1,9 @@
-@import 'components/all';
+@import "components/all";
 
 * {
-    box-sizing: border-box,
+  box-sizing: border-box;
+}
+
+* {
+  border: 1px solid black;
 }
