@@ -4,7 +4,7 @@ function SidebarButtons() {
   return (
     <div className="sidebar__buttons flex">
       <button type="button" className="button__1" onClick={(e) => {}}>
-        Button 1
+        Add Book
       </button>
       <button type="button" className="button__2" onClick={(e) => {}}>
         Button 2

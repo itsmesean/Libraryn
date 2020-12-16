@@ -3,8 +3,7 @@ import axios from 'axios';
 
 function BookInfo() {
   const [bookInfo, setBookInfo] = useState({
-    imageUrl:
-      'https://i5.walmartimages.com/asr/b6ab96db-027d-44b4-9d55-4a0207d71148.bcb30969d95f6f4c265af10831f0f2d6.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff',
+    imageUrl: "https://i.guim.co.uk/img/media/9a19fedf27882429f0287ecf5ea24b0e5c582c3f/0_0_2359_3543/master/2359.jpg?width=1010&quality=85&auto=format&fit=max&s=40fc53ce251311a4be327aa7f5d83758",
     title: 'title',
     author: 'author',
     condition: 'conditon',
@@ -16,7 +15,7 @@ function BookInfo() {
     axios
       .request(options)
       .then(function (response) {
-        setBookInfo(response)
+        setBookInfo(response);
       })
       .catch(function (error) {
         console.error(error);
