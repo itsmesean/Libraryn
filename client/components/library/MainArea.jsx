@@ -28,7 +28,6 @@ function MainArea() {
       });
   }
 
-  console.log(selected);
   const list = items.map((row) => {
     return (
       <li
@@ -46,6 +45,7 @@ function MainArea() {
       </li>
     );
   });
+  
   return (
     <div className="library__mainArea flex">
       <ul className="flex">{list}</ul>

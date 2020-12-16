@@ -50,11 +50,11 @@
       filter: brightness(0.8);
     }
     .selected {
-      border: 2px solid rgb(82, 82, 82)
+      border: 2px solid rgb(82, 82, 82);
     }
   }
-  // ::-webkit-scrollbar {
-  //   width: 0px;
-  //   background: transparent;
-  // }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }

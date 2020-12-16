@@ -7,6 +7,8 @@ const router = require('./routes/routes')
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.use("/dist", express.static(path.resolve(__dirname, "../dist")));
+
 app.use('/api', router);
 
 app.get('/', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
