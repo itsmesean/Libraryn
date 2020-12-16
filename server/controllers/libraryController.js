@@ -1,0 +1,1 @@
+const library = `SELECT * FROM libraries where user_id = ${user_id}`
