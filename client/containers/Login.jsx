@@ -4,18 +4,20 @@ import axios from 'axios';
 function Login() {
   function handleSubmit(e) {
     e.preventDefault();
-    const username = e.target[0].value;
-    const password = e.target[1].value;
+    const user = e.target[0].value;
+    const pass = e.target[1].value;
+
     const options = {
       method: 'GET',
       url: 'http://localhost:8080/api/',
-      data: { username, password },
+      params: { username: user, password: pass },
     };
     console.log(options);
     axios
       .request(options)
       .then(function (response) {
-        setBookInfo(response);
+        // setBookInfo(response);
+        console.log(response);
       })
       .catch(function (error) {
         console.error(error);
