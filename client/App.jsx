@@ -4,7 +4,7 @@ import axios from 'axios';
 import Details from './containers/Details';
 import Library from './containers/Library';
 import Sidebar from './containers/Sidebar';
-// import Login from './container/Login';
+import Login from './containers/Login';
 
 function App() {
   const [userState, setUserState] = useState({
@@ -35,9 +35,9 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
-  // if (userState.isLoggedIn === false) {
-  //   return <Login />;
-  // }
+  if (userState.isLoggedIn === false) {
+    return <Login />;
+  }
   return (
     <div className="grid-container">
       <Details />
